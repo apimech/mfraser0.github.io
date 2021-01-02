@@ -1,13 +1,64 @@
+/*----responsive----*/
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) { 
+
+     }
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) { 
+
+     }
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) { 
+
+     }
+
+/* ----end responsive---- */
+
+
+/* ---- TEST CSS BELOW ---- */
+html, body {
+    margin: 0;
+    overflow: hidden;
+  }
+  html {
+    overflow: hidden;
+  }
+#masterContainer{
+    height: 100%;
+    width: 100%; 
+    overflow-y: hidden;
+}
 .navbar {
     margin-bottom: 10px;
+    border-style: groove;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 5px;
+ z-index: 3;
+   
+    
+
+    
   }
   
   .navbar ul {
       list-style-type: none;
-      margin: 0;
+      margin-top: 0.5%;
       padding: 0;
       overflow: hidden;
-      background-color: #606c76;
+      background-color: rgba(255,255,255, 0.25);
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      border-spacing: 20%;
+      z-index: 3;
+     
   }
   
   .navbar li {
@@ -17,12 +68,46 @@
   
   .navbar li a {
       display: block;
-      color: white;
+      color: rgba(0, 0, 0, 0.377);
+      
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      
   }
   
-  .navbar li a:hover {
-      background-color: #ab5dda;
+ 
+
+  .siblingFade .sibLink{
+      font-size: 110%;
+    transition: opacity 0.2s;
+}
+.siblingFade:hover .sibLink:not(:hover) {
+    opacity: 0.5;
+}
+
+.mainContain{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+.ddiv{
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.contentDisplay{
+    z-index: 2;
+    overflow: hidden;
+}
+html, body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
   }
