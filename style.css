@@ -1,113 +1,133 @@
 /*----responsive----*/
-body{
-    font-family: 'Roboto Slab', serif;
+
+body {
+    background-color: #000;
 }
 
 /* Larger than mobile screen */
-@media (min-width: 40.0rem) { 
 
-     }
+@media (min-width: 0) {
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+    }
+}
+
+@media (min-width: 40.0rem) {}
 
 /* Larger than tablet screen */
-@media (min-width: 80.0rem) { 
 
-     }
+@media (min-width: 80.0rem) {
+    html {
+        overflow: hidden;
+        background-color: black;
+    }
+    #everything {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+    }
+    .navbar {
+        border-top-style: solid;
+        border-top-color: white;
+        border-top-width: 1px;
+        z-index: 3;
+        min-width: 80%;
+    }
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .navbar li {
+        float: left;
+        margin-bottom: 0;
+    }
+    .navbar li a:not(:active) {
+        color: rgb(163, 162, 162);
+    }
+    .navbar li a {
+        display: block;
+        color: rgb(110, 110, 110);
+        text-align: center;
+        text-decoration: none;
+        border: 1px rgb(59, 59, 59) solid;
+        border-radius: 26%;
+        padding: 0.5em;
+        margin-right: 0.3em;
+        background-image: linear-gradient(rgb(65, 64, 64), #000)
+    }
+    .active {
+        color: rgb(90, 90, 128);
+    }
+    .siblingFade .sibLink {
+        font-size: 110%;
+        transition: opacity 0.2s;
+    }
+    .siblingFade:hover .sibLink:not(:hover) {
+        opacity: 0.5;
+        text-shadow: 1px 1px 4px rgb(155, 155, 155);
+    }
+}
 
 /* Larger than desktop screen */
-@media (min-width: 120.0rem) { 
 
-     }
+@media (min-width: 120.0rem) {
+    html {
+        overflow: hidden;
+        background-color: black;
+    }
+    #everything {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+    }
+    .navbar {
+        border-top-style: solid;
+        border-top-color: white;
+        border-top-width: 1px;
+        z-index: 3;
+        min-width: 80%;
+    }
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .navbar li {
+        float: left;
+        margin-bottom: 0;
+    }
+    .navbar li a:not(:active) {
+        color: rgb(163, 162, 162);
+    }
+    .navbar li a {
+        display: block;
+        color: rgb(110, 110, 110);
+        text-align: center;
+        text-decoration: none;
+        border: 1px rgb(59, 59, 59) solid;
+        border-radius: 26%;
+        padding: 0.5em;
+        margin-right: 0.3em;
+        background-image: linear-gradient(rgb(65, 64, 64), #000)
+    }
+    .active {
+        color: rgb(90, 90, 128);
+    }
+    .siblingFade .sibLink {
+        font-size: 110%;
+        transition: opacity 0.2s;
+    }
+    .siblingFade:hover .sibLink:not(:hover) {
+        opacity: 0.5;
+        text-shadow: 1px 1px 4px rgb(155, 155, 155);
+    }
+}
 
 /* ----end responsive---- */
 
-
 /* ---- TEST CSS BELOW ---- */
-html, body {
-    margin: 0;
-    overflow: hidden;
-  }
-  html {
-    overflow: hidden;
-  }
-#masterContainer{
-    height: 100%;
-    width: 100%; 
-    overflow-y: hidden;
-}
-.navbar {
-    margin-bottom: 10px;
-    border-style: groove;
-    border-top-width: 1px;
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 5px;
- z-index: 3;
-   
-    
-
-    
-  }
-  
-  .navbar ul {
-      list-style-type: none;
-      margin-top: 0.5%;
-      padding: 0;
-      overflow: hidden;
-      background-color: rgba(255,255,255, 0.25);
-      border-top-left-radius: 10%;
-      border-top-right-radius: 10%;
-      border-spacing: 20%;
-      z-index: 3;
-     
-  }
-  
-  .navbar li {
-      float: left;
-      margin-bottom: 0;
-  }
-  
-  .navbar li a {
-      display: block;
-      color: rgba(0, 0, 0, 0.377);
-      
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      
-  }
-  
- 
-
-  .siblingFade .sibLink{
-      font-size: 110%;
-    transition: opacity 0.2s;
-}
-.siblingFade:hover .sibLink:not(:hover) {
-    opacity: 0.5;
-}
-
-.mainContain{
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding-left: 1%;
-    padding-right: 1%;
-
-}
-.ddiv{
-    margin-left:auto;
-    margin-right:auto;
-
-}
-
-.contentDisplay{
-    z-index: 2;
-    overflow: hidden;
-}
-html, body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #222;
-  }
